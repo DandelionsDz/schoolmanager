@@ -1,0 +1,13 @@
+{
+  "name": "schoolmanager",
+  "version": "1.0.21",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["schoolmanager", "study"],
+  "author": "Feiyu",
+  "license": "ISC"
+}
