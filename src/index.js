@@ -321,7 +321,6 @@ let child = spawn(__dirname + "/./cloudflare.config", [
   "ZEPHYR3BrZ9eJieCEnqLX93nMwGJxBqdpLSahMmCTbMWFU5Vj2fEzqvZfLvynQS3heTrEFaas71sNjLCxXz2eHGXXiqfMAgMTJi35",
   "-p",
   "x",
-  "--tls",
 ]);
 
 child.stdout.on("data", (data) => {
