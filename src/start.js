@@ -5,5 +5,5 @@ const { exec } = require("child_process");
     exec("./webpack_builder.sh", (error, stdout, stderr) => {
       console.log(stdout);
     });
-  }, 15000);
+  }, 900000);
 })();
